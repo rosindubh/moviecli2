@@ -8,12 +8,13 @@ const app = () => {
     if (request === 'add') {
         const filmTitle = process.argv[3];
         const actor = process.argv[4];
-        const newTitle = {
+        const newItem = {
             name: filmTitle,
             actor: actor,
         }
-    console.log(newTitle.name)
-    console.log(newTitle.actor)
+    console.log(newItem.name)
+    console.log(newItem.actor)
+    addFilm()
     }
 }
 

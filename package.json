@@ -1,0 +1,19 @@
+{
+  "name": "moviecli2",
+  "version": "1.0.0",
+  "description": "movieCLI take 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rosindubh/moviecli2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rosindubh/moviecli2/issues"
+  },
+  "homepage": "https://github.com/rosindubh/moviecli2#readme"
+}

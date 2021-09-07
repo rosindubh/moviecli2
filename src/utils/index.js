@@ -1,6 +1,18 @@
 //phil welsby - 7 sept 2021
 //index.js
 
+//file structure
+//.
+//├── LICENSE
+//├── package.json
+//├── README.md
+//└── src
+//    ├── app.js
+//    ├── db
+//    │   └── storage.json
+//    └── utils
+//        └── index.js
+
 const fs = require("fs");
 
 const readFile = () => {

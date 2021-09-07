@@ -1,5 +1,18 @@
 //phil welsby - 7 sept 2021
 //app.js
+
+//file structure
+//.
+//├── LICENSE
+//├── package.json
+//├── README.md
+//└── src
+//    ├── app.js
+//    ├── db
+//    │   └── storage.json
+//    └── utils
+//        └── index.js
+
 const request = process.argv[2];
 const {addFilm} = require("./utils")
 

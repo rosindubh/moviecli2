@@ -14,7 +14,7 @@ const app = () => {
         }
     console.log(newItem.name)
     console.log(newItem.actor)
-    addFilm()
+    addFilm(newItem)
     }
 }
 

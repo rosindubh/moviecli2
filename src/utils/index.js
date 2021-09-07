@@ -23,19 +23,17 @@ const readFile = () => {
         return [];
     }
 }
-
+// function to write data to storage.json file
 const writeData = (newArr) => {
     fs.writeFileSync('./src/db/storage.json', JSON.stringify(newArr))
 }
-
+//function which takes newItem, object created in app.js and assigns it to the parameter filmObject
 exports.addFilm = (filmObject) => {
     const list = readFile();
     list.push(filmObject);
     writeData(list);
 }
-
-
-
+//function which itterates through the array in storage.json
 exports.listDb = (item) => {
   console.log('Current Db contents...')
   const list = JSON.parse(fs.readFileSync("./src/db/storage.json"));

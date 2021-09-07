@@ -18,7 +18,6 @@ const {addFilm} = require("./utils")
 const {listDb} = require("./utils")
 
 const app = () => {
-    console.log('Hello from app function')
     if (request === 'add') {
         const filmTitle = process.argv[3];
         const actor = process.argv[4];

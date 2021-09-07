@@ -21,9 +21,11 @@ const app = () => {
     if (request === 'add') {
         const filmTitle = process.argv[3];
         const actor = process.argv[4];
+        const year = process.argv[5];
         const newItem = {
             name: filmTitle,
             actor: actor,
+            year: year,
         }
     console.log(newItem.name)
     console.log(newItem.actor)

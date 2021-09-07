@@ -1,7 +1,7 @@
 //phil welsby - 7 sept 2021
 //app.js
-
 const request = process.argv[2];
+const {addFilm} = require("./utils")
 
 const app = () => {
     console.log('Hello from app function')
@@ -12,6 +12,8 @@ const app = () => {
             name: filmTitle,
             actor: actor,
         }
+    console.log(newTitle.name)
+    console.log(newTitle.actor)
     }
 }
 

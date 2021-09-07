@@ -12,6 +12,12 @@ const readFile = () => {
     }
 }
 
-readFile()
+const writeData = (newArr) => {
+    fs.writeFileSync('./src/db/storage.json', JSON.stringify(newArr))
+}
 
-
+exports.addFilm = (filmObject) => {
+    const list = readFile();
+    list.push(filmObject);
+    writeData(list);
+}

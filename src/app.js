@@ -15,6 +15,7 @@
 
 const request = process.argv[2];
 const {addFilm} = require("./utils")
+const {listDb} = require("./utils")
 
 const app = () => {
     console.log('Hello from app function')
@@ -30,6 +31,9 @@ const app = () => {
             rating: rating
         }
     addFilm(newItem)
+    }
+    else if (request === 'list') {
+        listDb()
     }
 }
 

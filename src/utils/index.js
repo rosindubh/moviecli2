@@ -33,3 +33,15 @@ exports.addFilm = (filmObject) => {
     list.push(filmObject);
     writeData(list);
 }
+
+
+
+const listDb = (item) => {
+  console.log('Current Db contents...')
+  const list = JSON.parse(fs.readFileSync("./src/db/storage.json"));
+  for (let i = 0; i < list.length; i++) {
+    console.log(list[i])
+  }
+}
+
+//listDb()

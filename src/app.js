@@ -22,13 +22,13 @@ const app = () => {
         const filmTitle = process.argv[3];
         const actor = process.argv[4];
         const year = process.argv[5];
+        const rating = process.argv[6];
         const newItem = {
             name: filmTitle,
             actor: actor,
             year: year,
+            rating: rating
         }
-    console.log(newItem.name)
-    console.log(newItem.actor)
     addFilm(newItem)
     }
 }

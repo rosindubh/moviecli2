@@ -17,7 +17,7 @@ const fs = require("fs");
 
 const readFile = () => {
     try {
-        console.log("try in readFile")
+        console.log("Film added to database")
         return JSON.parse(fs.readFileSync("./src/db/storage.json"));
     } catch (error) {
         return [];

@@ -5,6 +5,14 @@ const request = process.argv[2];
 
 const app = () => {
     console.log('Hello from app function')
+    if (request === 'add') {
+        const filmTitle = process.argv[3];
+        const actor = process.argv[4];
+        const newTitle = {
+            name: filmTitle,
+            actor: actor,
+        }
+    }
 }
 
 app();

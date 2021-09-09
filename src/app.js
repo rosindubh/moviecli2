@@ -16,6 +16,7 @@
 const request = process.argv[2];
 const {addFilm} = require("./utils")
 const {listDb} = require("./utils")
+const {deleteMovie} = require("./utils")
 
 const app = () => {
     if (request === 'add') {
@@ -33,6 +34,10 @@ const app = () => {
     }
     else if (request === 'list') {
         listDb()
+    }
+    else if (request === "delete") {
+        const searchTerm = process.argv[3];
+        deleteMovie(searchTerm);
     }
 }
 

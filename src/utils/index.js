@@ -47,6 +47,24 @@ exports.listDb = (item) => {
   }
 }
 
+exports.updateMovie = (filter, rating) => {
+    const list = readFile();
+    let updateIndex;
+    list.map((item, index) => {
+        if (item.name === filter) {
+            updateIndex = index;
+        }
+        return null
+    })
+    if (updateIndex > -1) {
+        list[updateIndex].rating = rating;
+        saveFile(list);
+    }
+    else {
+        console.log("Movie not found!")
+    }
+};
+
 exports.deleteMovie = (filter) => {
     const list = readFile();
     let deleteIndex;
